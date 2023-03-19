@@ -1,0 +1,247 @@
+body{
+scroll-behavior: smooth;
+margin: 0;
+text-align: center;
+font-kerning: normal;
+background-color: black;
+}
+.page-content{
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  background-color: red;
+}
+.logo{
+width: 150px;
+height: 150px;
+object-fit: contain;
+margin-left: 20px;
+}
+.header{
+display: flex;
+flex-direction: row;
+background-color: red;
+border-bottom: solid white;
+}
+.left-section{
+display: flex;
+width: 200px;
+}
+.mid-section{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  color: white;
+  text-align: center;
+}
+.mid-section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.mid-section ul li {
+  display: inline-block;
+ 
+  margin-left: 15px;
+}
+.mid-section ul li a{
+display: inline-block;
+color: white;
+text-align: center; 
+text-decoration: none;
+padding-bottom: 3px;
+position: relative;
+}
+.mid-section ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color:white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.mid-section ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.right-section{
+  display: flex;
+  width: 200px;
+  text-align: center;
+  
+}
+.right-section h2{
+color: white;
+font-weight: 500;
+font-size: 30px;
+margin-top: 55px;
+}
+.aboutUs{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-top: 25px;
+}
+.aboutUs img{
+height: 250px;
+width: 250px;
+object-fit: cover;
+border-radius: 5px;
+
+}
+.aboutUs-text{
+display: flex;
+flex-direction: column;
+color: white;
+}
+.aboutUs-text2{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.aboutUs-text2{
+  text-align: right;
+  margin-right: 15px;
+}
+.aboutUs-Organize{
+display: flex;
+flex-direction: row;
+}
+.aboutUs-text h2{
+text-align: left;
+margin-left: 15px;
+}
+.info-kitkat{
+display: flex;
+flex-direction: column;
+}
+.info-box{
+display: flex;
+flex-direction: row;
+color: white;
+text-align: center;
+}
+.info-box img{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.info-text{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.info-text h2{
+text-align: left;
+margin-left: 15px;
+}
+.KitKat-sec{
+width: 99.5%;
+height: 400px;
+object-fit: contain;
+background-image: url('nestle.png'),url('bunchofkitkat.jpg');
+background-repeat: no-repeat;
+background-position: top left, left center;
+background-size: 40%, 100%;
+margin-top: 15px;
+border: solid;
+border-color: white;
+align-content: center;
+}
+.KitKat-sec h2{
+  margin-top: 200px;
+  color: white;
+ 
+}
+.KitKat-sec button{
+background-color: red;
+border: solid;
+border-color: white;
+width: 150px;
+height: 100px;
+border-radius: 20px;
+color: white;
+font-size: 20px;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-weight: 900;
+}
+.KitKat-sec button:hover{
+  color: red;
+  background-color: white;
+  border-color: red;
+  cursor: pointer;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+ 
+}
+.footer img{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-left: 20px;
+   align-self: center;
+}
+.left-section-footer{
+border-right: solid white;
+display: flex;
+width: 200px;
+}
+.mid-section form{
+display: flex;
+flex-direction: column;
+margin-left: 90px;
+
+}
+.mid-section input{
+border: solid;
+border-color: white;
+color: white;
+background-color: red;
+border-radius: 5px;
+}
+
+.mid-section form label{
+text-align: left;
+font-weight: 900;
+}
+.mid-section button{
+  background-color: red;
+  border: solid;
+  border-color: white;
+  width: 100px;
+  height: 70px;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-weight: 900;
+  align-self: center;
+  margin-top: 5px;
+}
+.mid-section button:hover{
+  color: red;
+  background-color: white;
+  border-color: red;
+  cursor: pointer;
+}
+.right-section-footer{
+display: flex;
+flex: 1;
+flex-direction: column;
+color: white;
+border-left: solid white;
+}
